@@ -1,0 +1,315 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Search results
+{% endblock %}
+
+{% block beforeContent %}
+  {{ govukPhaseBanner({
+    tag: {
+      text: "prototype"
+    },
+    html: 'This is not a real service.'
+  }) }}
+  {{ govukBackLink({
+    text: "Back",
+    href: "find-data"
+  }) }}
+{% endblock %}
+
+{% block content %}
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+      <h1 class="govuk-heading-l">Search results</h1>
+      <form action="/form-handler" method="post" novalidate>
+          <div class="govuk-form-group">
+            <input class="govuk-input" id="search-data" name="search-data" placeholder="Search data.gov.uk" type="text">
+          </div>
+          <button class="govuk-button" data-module="govuk-button">
+            Search
+          </button>
+        </form>
+  </div>
+</div>
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-one-third">
+    <h2 class="govuk-heading-m">Filter by</h2>
+
+    <button class="govuk-button" data-module="govuk-button">
+      Apply filters
+    </button>
+    <p class="govuk-body">
+      <a href="#">Remove filters</a>
+    </p>
+  </div>
+  <div class="govuk-grid-column-two-thirds">
+    <p class="govuk-body">760 results found</p>
+
+    <div class="dgu-results__result govuk-!-padding-bottom-6">
+      <h2 class="govuk-heading-m">
+        <a class="govuk-link" href="#">HM Revenue & Customs Receipts</a>
+      </h2>
+      <dl class="dgu-metadata__box">
+        <dt>Published by:</dt>
+        <dd class="published_by">Her Majesty's Revenue and Customs</dd>
+        <dt>Last updated:</dt>
+          <dd>21 August 2014</dd>
+      </dl>
+      <p class="govuk-body">Provides monthly and annual historical records on all HMRC Tax & NIC receipts, and Tax Credit payments. Previously listed under 'Revenue-based Taxes and Benefits: Tax receipts and...</p>
+    </div>
+
+    <div class="dgu-results__result govuk-!-padding-bottom-6">
+      <h2 class="govuk-heading-m">
+        <a class="govuk-link" href="#">HM Revenue & Customs Receipts</a>
+      </h2>
+      <dl class="dgu-metadata__box">
+        <dt>Published by:</dt>
+        <dd class="published_by">Her Majesty's Revenue and Customs</dd>
+        <dt>Last updated:</dt>
+          <dd>21 August 2014</dd>
+      </dl>
+      <p class="govuk-body">Provides monthly and annual historical records on all HMRC Tax & NIC receipts, and Tax Credit payments. Previously listed under 'Revenue-based Taxes and Benefits: Tax receipts and...</p>
+    </div>
+
+    <div class="dgu-results__result govuk-!-padding-bottom-6">
+      <h2 class="govuk-heading-m">
+        <a class="govuk-link" href="#">HM Revenue & Customs Receipts</a>
+      </h2>
+      <dl class="dgu-metadata__box">
+        <dt>Published by:</dt>
+        <dd class="published_by">Her Majesty's Revenue and Customs</dd>
+        <dt>Last updated:</dt>
+          <dd>21 August 2014</dd>
+      </dl>
+      <p class="govuk-body">Provides monthly and annual historical records on all HMRC Tax & NIC receipts, and Tax Credit payments. Previously listed under 'Revenue-based Taxes and Benefits: Tax receipts and...</p>
+    </div>
+
+    <div class="dgu-results__result govuk-!-padding-bottom-6">
+      <h2 class="govuk-heading-m">
+        <a class="govuk-link" href="#">HM Revenue & Customs Receipts</a>
+      </h2>
+      <dl class="dgu-metadata__box">
+        <dt>Published by:</dt>
+        <dd class="published_by">Her Majesty's Revenue and Customs</dd>
+        <dt>Last updated:</dt>
+          <dd>21 August 2014</dd>
+      </dl>
+      <p class="govuk-body">Provides monthly and annual historical records on all HMRC Tax & NIC receipts, and Tax Credit payments. Previously listed under 'Revenue-based Taxes and Benefits: Tax receipts and...</p>
+    </div>
+
+    <div class="dgu-results__result govuk-!-padding-bottom-6">
+      <h2 class="govuk-heading-m">
+        <a class="govuk-link" href="#">HM Revenue & Customs Receipts</a>
+      </h2>
+      <dl class="dgu-metadata__box">
+        <dt>Published by:</dt>
+        <dd class="published_by">Her Majesty's Revenue and Customs</dd>
+        <dt>Last updated:</dt>
+          <dd>21 August 2014</dd>
+      </dl>
+      <p class="govuk-body">Provides monthly and annual historical records on all HMRC Tax & NIC receipts, and Tax Credit payments. Previously listed under 'Revenue-based Taxes and Benefits: Tax receipts and...</p>
+    </div>
+
+    <div class="dgu-results__result govuk-!-padding-bottom-6">
+      <h2 class="govuk-heading-m">
+        <a class="govuk-link" href="#">HM Revenue & Customs Receipts</a>
+      </h2>
+      <dl class="dgu-metadata__box">
+        <dt>Published by:</dt>
+        <dd class="published_by">Her Majesty's Revenue and Customs</dd>
+        <dt>Last updated:</dt>
+          <dd>21 August 2014</dd>
+      </dl>
+      <p class="govuk-body">Provides monthly and annual historical records on all HMRC Tax & NIC receipts, and Tax Credit payments. Previously listed under 'Revenue-based Taxes and Benefits: Tax receipts and...</p>
+    </div>
+
+    <div class="dgu-results__result govuk-!-padding-bottom-6">
+      <h2 class="govuk-heading-m">
+        <a class="govuk-link" href="#">HM Revenue & Customs Receipts</a>
+      </h2>
+      <dl class="dgu-metadata__box">
+        <dt>Published by:</dt>
+        <dd class="published_by">Her Majesty's Revenue and Customs</dd>
+        <dt>Last updated:</dt>
+          <dd>21 August 2014</dd>
+      </dl>
+      <p class="govuk-body">Provides monthly and annual historical records on all HMRC Tax & NIC receipts, and Tax Credit payments. Previously listed under 'Revenue-based Taxes and Benefits: Tax receipts and...</p>
+    </div>
+
+    <div class="dgu-results__result govuk-!-padding-bottom-6">
+      <h2 class="govuk-heading-m">
+        <a class="govuk-link" href="#">HM Revenue & Customs Receipts</a>
+      </h2>
+      <dl class="dgu-metadata__box">
+        <dt>Published by:</dt>
+        <dd class="published_by">Her Majesty's Revenue and Customs</dd>
+        <dt>Last updated:</dt>
+          <dd>21 August 2014</dd>
+      </dl>
+      <p class="govuk-body">Provides monthly and annual historical records on all HMRC Tax & NIC receipts, and Tax Credit payments. Previously listed under 'Revenue-based Taxes and Benefits: Tax receipts and...</p>
+    </div>
+
+    <div class="dgu-results__result govuk-!-padding-bottom-6">
+      <h2 class="govuk-heading-m">
+        <a class="govuk-link" href="#">HM Revenue & Customs Receipts</a>
+      </h2>
+      <dl class="dgu-metadata__box">
+        <dt>Published by:</dt>
+        <dd class="published_by">Her Majesty's Revenue and Customs</dd>
+        <dt>Last updated:</dt>
+          <dd>21 August 2014</dd>
+      </dl>
+      <p class="govuk-body">Provides monthly and annual historical records on all HMRC Tax & NIC receipts, and Tax Credit payments. Previously listed under 'Revenue-based Taxes and Benefits: Tax receipts and...</p>
+    </div>
+
+    <div class="dgu-results__result govuk-!-padding-bottom-6">
+      <h2 class="govuk-heading-m">
+        <a class="govuk-link" href="#">HM Revenue & Customs Receipts</a>
+      </h2>
+      <dl class="dgu-metadata__box">
+        <dt>Published by:</dt>
+        <dd class="published_by">Her Majesty's Revenue and Customs</dd>
+        <dt>Last updated:</dt>
+          <dd>21 August 2014</dd>
+      </dl>
+      <p class="govuk-body">Provides monthly and annual historical records on all HMRC Tax & NIC receipts, and Tax Credit payments. Previously listed under 'Revenue-based Taxes and Benefits: Tax receipts and...</p>
+    </div>
+
+    <div class="dgu-results__result govuk-!-padding-bottom-6">
+      <h2 class="govuk-heading-m">
+        <a class="govuk-link" href="#">HM Revenue & Customs Receipts</a>
+      </h2>
+      <dl class="dgu-metadata__box">
+        <dt>Published by:</dt>
+        <dd class="published_by">Her Majesty's Revenue and Customs</dd>
+        <dt>Last updated:</dt>
+          <dd>21 August 2014</dd>
+      </dl>
+      <p class="govuk-body">Provides monthly and annual historical records on all HMRC Tax & NIC receipts, and Tax Credit payments. Previously listed under 'Revenue-based Taxes and Benefits: Tax receipts and...</p>
+    </div>
+
+    <div class="dgu-results__result govuk-!-padding-bottom-6">
+      <h2 class="govuk-heading-m">
+        <a class="govuk-link" href="#">HM Revenue & Customs Receipts</a>
+      </h2>
+      <dl class="dgu-metadata__box">
+        <dt>Published by:</dt>
+        <dd class="published_by">Her Majesty's Revenue and Customs</dd>
+        <dt>Last updated:</dt>
+          <dd>21 August 2014</dd>
+      </dl>
+      <p class="govuk-body">Provides monthly and annual historical records on all HMRC Tax & NIC receipts, and Tax Credit payments. Previously listed under 'Revenue-based Taxes and Benefits: Tax receipts and...</p>
+    </div>
+
+    <div class="dgu-results__result govuk-!-padding-bottom-6">
+      <h2 class="govuk-heading-m">
+        <a class="govuk-link" href="#">HM Revenue & Customs Receipts</a>
+      </h2>
+      <dl class="dgu-metadata__box">
+        <dt>Published by:</dt>
+        <dd class="published_by">Her Majesty's Revenue and Customs</dd>
+        <dt>Last updated:</dt>
+          <dd>21 August 2014</dd>
+      </dl>
+      <p class="govuk-body">Provides monthly and annual historical records on all HMRC Tax & NIC receipts, and Tax Credit payments. Previously listed under 'Revenue-based Taxes and Benefits: Tax receipts and...</p>
+    </div>
+
+    <div class="dgu-results__result govuk-!-padding-bottom-6">
+      <h2 class="govuk-heading-m">
+        <a class="govuk-link" href="#">HM Revenue & Customs Receipts</a>
+      </h2>
+      <dl class="dgu-metadata__box">
+        <dt>Published by:</dt>
+        <dd class="published_by">Her Majesty's Revenue and Customs</dd>
+        <dt>Last updated:</dt>
+          <dd>21 August 2014</dd>
+      </dl>
+      <p class="govuk-body">Provides monthly and annual historical records on all HMRC Tax & NIC receipts, and Tax Credit payments. Previously listed under 'Revenue-based Taxes and Benefits: Tax receipts and...</p>
+    </div>
+
+    <div class="dgu-results__result govuk-!-padding-bottom-6">
+      <h2 class="govuk-heading-m">
+        <a class="govuk-link" href="#">HM Revenue & Customs Receipts</a>
+      </h2>
+      <dl class="dgu-metadata__box">
+        <dt>Published by:</dt>
+        <dd class="published_by">Her Majesty's Revenue and Customs</dd>
+        <dt>Last updated:</dt>
+          <dd>21 August 2014</dd>
+      </dl>
+      <p class="govuk-body">Provides monthly and annual historical records on all HMRC Tax & NIC receipts, and Tax Credit payments. Previously listed under 'Revenue-based Taxes and Benefits: Tax receipts and...</p>
+    </div>
+
+    <div class="dgu-results__result govuk-!-padding-bottom-6">
+      <h2 class="govuk-heading-m">
+        <a class="govuk-link" href="#">HM Revenue & Customs Receipts</a>
+      </h2>
+      <dl class="dgu-metadata__box">
+        <dt>Published by:</dt>
+        <dd class="published_by">Her Majesty's Revenue and Customs</dd>
+        <dt>Last updated:</dt>
+          <dd>21 August 2014</dd>
+      </dl>
+      <p class="govuk-body">Provides monthly and annual historical records on all HMRC Tax & NIC receipts, and Tax Credit payments. Previously listed under 'Revenue-based Taxes and Benefits: Tax receipts and...</p>
+    </div>
+
+    <div class="dgu-results__result govuk-!-padding-bottom-6">
+      <h2 class="govuk-heading-m">
+        <a class="govuk-link" href="#">HM Revenue & Customs Receipts</a>
+      </h2>
+      <dl class="dgu-metadata__box">
+        <dt>Published by:</dt>
+        <dd class="published_by">Her Majesty's Revenue and Customs</dd>
+        <dt>Last updated:</dt>
+          <dd>21 August 2014</dd>
+      </dl>
+      <p class="govuk-body">Provides monthly and annual historical records on all HMRC Tax & NIC receipts, and Tax Credit payments. Previously listed under 'Revenue-based Taxes and Benefits: Tax receipts and...</p>
+    </div>
+
+    <div class="dgu-results__result govuk-!-padding-bottom-6">
+      <h2 class="govuk-heading-m">
+        <a class="govuk-link" href="#">HM Revenue & Customs Receipts</a>
+      </h2>
+      <dl class="dgu-metadata__box">
+        <dt>Published by:</dt>
+        <dd class="published_by">Her Majesty's Revenue and Customs</dd>
+        <dt>Last updated:</dt>
+          <dd>21 August 2014</dd>
+      </dl>
+      <p class="govuk-body">Provides monthly and annual historical records on all HMRC Tax & NIC receipts, and Tax Credit payments. Previously listed under 'Revenue-based Taxes and Benefits: Tax receipts and...</p>
+    </div>
+
+    <div class="dgu-results__result govuk-!-padding-bottom-6">
+      <h2 class="govuk-heading-m">
+        <a class="govuk-link" href="#">HM Revenue & Customs Receipts</a>
+      </h2>
+      <dl class="dgu-metadata__box">
+        <dt>Published by:</dt>
+        <dd class="published_by">Her Majesty's Revenue and Customs</dd>
+        <dt>Last updated:</dt>
+          <dd>21 August 2014</dd>
+      </dl>
+      <p class="govuk-body">Provides monthly and annual historical records on all HMRC Tax & NIC receipts, and Tax Credit payments. Previously listed under 'Revenue-based Taxes and Benefits: Tax receipts and...</p>
+    </div>
+
+    <div class="dgu-results__result govuk-!-padding-bottom-6">
+      <h2 class="govuk-heading-m">
+        <a class="govuk-link" href="#">HM Revenue & Customs Receipts</a>
+      </h2>
+      <dl class="dgu-metadata__box">
+        <dt>Published by:</dt>
+        <dd class="published_by">Her Majesty's Revenue and Customs</dd>
+        <dt>Last updated:</dt>
+          <dd>21 August 2014</dd>
+      </dl>
+      <p class="govuk-body">Provides monthly and annual historical records on all HMRC Tax & NIC receipts, and Tax Credit payments. Previously listed under 'Revenue-based Taxes and Benefits: Tax receipts and...</p>
+    </div>
+
+
+  </div>
+</div>
+
+
+
+{% endblock %}
