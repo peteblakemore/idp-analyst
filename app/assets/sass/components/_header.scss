@@ -1,0 +1,22 @@
+.page-heading {
+    clear: both;
+    display: table;
+    margin-bottom: 0px;
+    margin-top: 0;
+    padding-top: 8px;
+    width: 100%;
+    table-layout: fixed;
+}
+
+.page-heading .heading-secondary {
+    font-family: "nta",Arial,sans-serif;
+    font-weight: 400;
+    text-transform: none;
+    font-size: 20px;
+    line-height: 1.11111;
+    display: block;
+    padding-top: 8px;
+    padding-bottom: 70px;
+    color: #6f777b;
+    display: table-header-group;
+}

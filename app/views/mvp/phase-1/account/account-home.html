@@ -1,0 +1,179 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Find data
+{% endblock %}
+
+{% block beforeContent %}
+  {{ govukPhaseBanner({
+    tag: {
+      text: "prototype"
+    },
+    html: 'This is not a real service.'
+  }) }}
+{% endblock %}
+
+{% block content %}
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <div class="page-heading">
+          <h1 class="govuk-heading-xl">John Smith</h1>
+          <p class="heading-secondary">Account home</p>
+      </div>
+    </div>
+  </div>
+
+
+<!--
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+----------------------------------- PROJECTS -----------------------------------
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+-->
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-full">
+    <div class="govuk-heading-l divider--bottom">
+      Projects
+    </div>
+  </div>
+</div>
+
+<div class="govuk-grid-row govuk-!-padding-bottom-7">
+  <div class="govuk-grid-column-one-third">
+    <div class="das-card" style="height: 255px;">
+      <div class="das-card--content">
+        <div class="das-card--header">
+          <p class="govuk-body govuk-!-font-weight-bold">
+            <a class="govuk-link govuk-link--no-visited-state" href="recruitment-layout-table?recruitment-heading=Vacancies&amp;status-filter=Draft">
+              Create a new project
+            </a>
+          </p>
+        </div>
+        <p class="govuk-body das-card--description">Create a new project to gain access to a dataset.</p>
+      </div>
+    </div>
+  </div>
+  <div class="govuk-grid-column-one-third">
+    <div class="das-card" style="height: 255px;">
+      <div class="das-card--content">
+        <div class="das-card--header">
+          <p class="govuk-body govuk-!-font-weight-bold">
+            <a class="govuk-link govuk-link--no-visited-state" href="recruitment-layout-table?recruitment-heading=Vacancies&amp;status-filter=Draft">
+              Check progress of projects in review
+            </a>
+          </p>
+        </div>
+        <p class="govuk-body das-card--description">Check the progress of projects that have been submitted for review.</p>
+      </div>
+    </div>
+  </div>
+  <div class="govuk-grid-column-one-third">
+    <div class="das-card" style="height: 255px;">
+      <div class="das-card--content">
+        <div class="das-card--header">
+          <p class="govuk-body govuk-!-font-weight-bold">
+            <a class="govuk-link govuk-link--no-visited-state" href="recruitment-layout-table?recruitment-heading=Vacancies&amp;status-filter=Draft">
+              View active projects
+            </a>
+          </p>
+        </div>
+        <p class="govuk-body das-card--description">Contionue working on projects that have gained approval.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+----------------------------------- REQUEST DATA -------------------------------
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+-->
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-full">
+    <div class="govuk-heading-l divider--bottom">
+      Request data
+    </div>
+  </div>
+</div>
+
+<div class="govuk-grid-row govuk-!-padding-bottom-7">
+  <div class="govuk-grid-column-one-third">
+    <div class="das-card" style="height: 255px;">
+      <div class="das-card--content">
+        <div class="das-card--header">
+          <p class="govuk-body govuk-!-font-weight-bold">
+            <a class="govuk-link govuk-link--no-visited-state" href="recruitment-layout-table?recruitment-heading=Vacancies&amp;status-filter=Draft">
+              Create a new request for data
+            </a>
+          </p>
+        </div>
+        <p class="govuk-body das-card--description">Request that data is acquired if you're unable to find it for your project.</p>
+      </div>
+    </div>
+  </div>
+  <div class="govuk-grid-column-one-third">
+    <div class="das-card" style="height: 255px;">
+      <div class="das-card--content">
+        <div class="das-card--header">
+          <p class="govuk-body govuk-!-font-weight-bold">
+            <a class="govuk-link govuk-link--no-visited-state" href="recruitment-layout-table?recruitment-heading=Vacancies&amp;status-filter=Draft">
+              Check the progress of a request for data
+            </a>
+          </p>
+        </div>
+        <p class="govuk-body das-card--description">Check the progress of requests for data acquisition.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+----------------------------------- ACCREDITATION -------------------------------
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+-->
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-full">
+    <div class="govuk-heading-l divider--bottom">
+      Accreditation
+    </div>
+  </div>
+</div>
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-one-third">
+    <div class="das-card" style="height: 255px;">
+      <div class="das-card--content">
+        <div class="das-card--header">
+          <p class="govuk-body govuk-!-font-weight-bold">
+            <a class="govuk-link govuk-link--no-visited-state" href="recruitment-layout-table?recruitment-heading=Vacancies&amp;status-filter=Draft">
+              View your current accreditation status
+            </a>
+          </p>
+        </div>
+        <p class="govuk-body das-card--description">View the details of your current accreditation status, including supporting evidence, and expiration date.</p>
+      </div>
+    </div>
+  </div>
+  <div class="govuk-grid-column-one-third">
+    <div class="das-card" style="height: 255px;">
+      <div class="das-card--content">
+        <div class="das-card--header">
+          <p class="govuk-body govuk-!-font-weight-bold">
+            <a class="govuk-link govuk-link--no-visited-state" href="recruitment-layout-table?recruitment-heading=Vacancies&amp;status-filter=Draft">
+              Apply to change your level of access
+            </a>
+          </p>
+        </div>
+        <p class="govuk-body das-card--description">Submit evidence to support an application to change your level of access.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+{% endblock %}
