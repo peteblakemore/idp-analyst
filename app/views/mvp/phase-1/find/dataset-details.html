@@ -1,0 +1,112 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Search results
+{% endblock %}
+
+{% block beforeContent %}
+  {{ govukPhaseBanner({
+    tag: {
+      text: "prototype"
+    },
+    html: 'This is not a real service.'
+  }) }}
+  {{ govukBackLink({
+    text: "Back",
+    href: "search-results"
+  }) }}
+{% endblock %}
+
+{% block content %}
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+      <h1 class="govuk-heading-l">Dataset name</h1>
+
+  </div>
+</div>
+
+<div class="govuk-grid-row govuk-!-padding-bottom-7">
+  <div class="govuk-grid-column-two-thirds">
+    <div class="metadata-box">
+      <dl class="dgu-metadata__box">
+        <dt>Published by:</dt>
+        <dd class="published_by">Her Majesty's Revenue and Customs</dd>
+        <dt>Last updated:</dt>
+        <dd>21 August 2014</dd>
+        <dt>Topic:</dt>
+        <dd>Government spending</dd>
+        <dt>Licence:</dt>
+        <dd>Controlled data</dd>
+        <dt>Safeguarded available:</dt>
+        <dd>Yes</dd>
+
+      </dl>
+      <h2 class="govuk-heading-s">Summary</h2>
+      <p class="govuk-body">Statistics describing the total revenue balances (showing both committed and uncommitted revenue balances) and also the total revenue balances as a proportion of the total revenue income for LA maintained schools in England. Further analysis describes school balances for those schools in deficit, those in surplus and those schools with excessive surpluses.</p>
+    </div>
+  </div>
+
+  <div class="govuk-grid-column-one-third">
+    <h2 class="govuk-heading-s">More from this publisher</h2>
+      <ul class="govuk-list">
+        <li>
+          <a class="govuk-link" href="#">All datasets from [supplier name]</a>
+        </li>
+      </ul>
+
+    <h2 class="govuk-heading-s">Related datasets</h2>
+      <ul class="govuk-list">
+        <li>
+          <a class="govuk-link" href="#">[Dataset name]</a>
+        </li>
+        <li>
+          <a class="govuk-link" href="#">[Dataset name]</a>
+        </li>
+        <li>
+          <a class="govuk-link" href="#">[Dataset name]</a>
+        </li>
+      </ul>
+  </div>
+</div>
+
+<div class="govuk-grid-row govuk-!-padding-bottom-5">
+  <div class="govuk-grid-column-full">
+    <table class="govuk-table">
+      <caption class="govuk-table__caption govuk-table__caption--m">Data links</caption>
+      <thead class="govuk-table__head">
+        <tr class="govuk-table__row">
+          <th scope="col" class="govuk-table__header app-custom-class">Links to the data</th>
+          <th scope="col" class="govuk-table__header app-custom-class">Format</th>
+          <th scope="col" class="govuk-table__header app-custom-class">File added</th>
+          <th scope="col" class="govuk-table__header app-custom-class">Data preview</th>
+        </tr>
+      </thead>
+      <tbody class="govuk-table__body">
+        <tr class="govuk-table__row">
+          <td class="govuk-table__cell"><a href="#" class="govuk-link">Dataset name</a></td>
+          <td class="govuk-table__cell">CSVW</td>
+          <td class="govuk-table__cell">09 February 2021</td>
+          <td class="govuk-table__cell"><a href="#" class="govuk-link">Safeguarded version</a></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-full">
+      <h2 class="govuk-heading-m">Contact</h2>
+      <h3 class="govuk-heading-s">Freedom of information (FOI) requests</h3>
+      <ul class="govuk-list">
+        <li>
+          <a class="govuk-link" href="#">Contact HMRC regarding this dataset</a>
+        </li>
+        <li>
+          <a class="govuk-link" href="#">Freedome of information requests for this dataset</a>
+        </li>
+      </ul>
+  </div>
+</div>
+
+
+{% endblock %}
